@@ -378,6 +378,10 @@ img{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
+.menu__containers{
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
 
 .menu__content{
   position: relative;
@@ -640,6 +644,10 @@ img{
   .services__container,
   .menu__container{
     margin-top: var(--mb-6);
+  }
+  .menu__containers {
+    grid-template-columns: repeat(4, 280px);
+    column-gap: rem;
   }
 
   .menu__container{
