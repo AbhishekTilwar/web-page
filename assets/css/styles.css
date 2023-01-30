@@ -656,7 +656,7 @@ img{
   }
   .menu__container2 {
     grid-template-columns: repeat(2, 280px);
-    column-gap: 4rem;
+    column-gap: 2rem;
   }
   .menu__container{
     grid-template-columns: repeat(3, 280px);
