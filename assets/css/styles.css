@@ -72,10 +72,10 @@ body.dark-theme{
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
-  right: 1rem;
+  right: 2.6rem;
   top: 1.8rem;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -138,11 +138,12 @@ img{
 }
 
 /*========== LAYOUT ==========*/
+
 .bd-container{
-  max-width: 1200px;
+  max-width: 1300px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-3);
-  margin-right: var(--mb-2);
+  margin-right: var(--mb-3);
 }
 
 .bd-grid{
@@ -161,7 +162,7 @@ img{
 
 /*========== NAV ==========*/
 .nav{
-  max-width: 1425px;
+  max-width: 1500px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -185,14 +186,15 @@ img{
     z-index: var(--z-fixed);
   }
   .nav{
-    max-width: 90%;
+    max-width: 100%;
     margin-left: 10px;
     margin-top: 10px;
   }
 }
 
 .nav__item{
-  margin-bottom: var(--mb-2);
+  margin-top: 8px;
+
 }
 
 .nav__link, .nav__logo, .nav__toggle{
@@ -378,6 +380,15 @@ img{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
+.menu__containers{
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.menu__container2{
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
 
 .menu__content{
   position: relative;
@@ -641,7 +652,14 @@ img{
   .menu__container{
     margin-top: var(--mb-6);
   }
-
+  .menu__containers {
+    grid-template-columns: repeat(4, 280px);
+    column-gap: 3rem;
+  }
+  .menu__container2 {
+    grid-template-columns: repeat(2, 280px);
+    column-gap: 4rem;
+  }
   .menu__container{
     grid-template-columns: repeat(3, 280px);
     column-gap: 4rem;
