@@ -140,7 +140,7 @@ img{
 /*========== LAYOUT ==========*/
 
 .bd-container{
-  max-width: 1200px;
+  max-width: 1500px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
@@ -162,7 +162,7 @@ img{
 
 /*========== NAV ==========*/
 .nav{
-  max-width: 1425px;
+  max-width: 1500px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -186,7 +186,7 @@ img{
     z-index: var(--z-fixed);
   }
   .nav{
-    max-width: 90%;
+    max-width: 100%;
     margin-left: 10px;
     margin-top: 10px;
   }
