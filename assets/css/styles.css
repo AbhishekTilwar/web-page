@@ -72,10 +72,10 @@ body.dark-theme{
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
-  right: 1rem;
+  right: 2.6rem;
   top: 1.8rem;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -138,11 +138,12 @@ img{
 }
 
 /*========== LAYOUT ==========*/
+
 .bd-container{
   max-width: 1200px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-3);
-  margin-right: var(--mb-2);
+  margin-right: var(--mb-3);
 }
 
 .bd-grid{
@@ -192,7 +193,8 @@ img{
 }
 
 .nav__item{
-  margin-bottom: var(--mb-2);
+  margin-top: 8px;
+
 }
 
 .nav__link, .nav__logo, .nav__toggle{
