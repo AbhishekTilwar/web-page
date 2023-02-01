@@ -413,9 +413,11 @@ img{
   color: var(--title-color);
 }
 .menu__preci_blue{
+  
   font-weight: var(--font-semi-bold);
   color: #4285F4;
 }
+
 
 .menu__name{
   font-size: var(--normal-font-size);
@@ -816,7 +818,7 @@ img{
 
 
 
-          /* The laptop with borders */
+/* The laptop with borders */
           .laptop {
             -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -951,14 +953,6 @@ img{
             font-weight: bold;
             color: red;
           }
-          
-
-
-
-
-
-          
-/* try*/
 
 #splash-screen {
   position: relative;
