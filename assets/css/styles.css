@@ -970,27 +970,4 @@ img{
   transition: 1.4s ease-in-out;
 }
 
-.cover-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)), url('back.jpg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.cover-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-
-.iframe-container {
-  overflow: hidden;
-}
-
-.iframe-container iframe {
-  border: none;
-  overflow: hidden;
-}
