@@ -72,7 +72,7 @@ body.dark-theme{
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
-  right: 1.6rem;
+  right: 2.6rem;
   top: 1.8rem;
   color: var(--text-color);
   font-size: 1.2rem;
@@ -162,7 +162,7 @@ img{
 
 /*========== NAV ==========*/
 .nav{
-  max-width: 1500px;
+  max-width: 1480px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
