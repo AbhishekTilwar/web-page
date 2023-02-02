@@ -969,3 +969,16 @@ img{
   transform: translateY(-50%);
   transition: 1.4s ease-in-out;
 }
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #9633FF;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725)), url('back.jpg');
+  background-size: cover;
+}
+
+
