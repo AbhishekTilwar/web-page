@@ -162,7 +162,7 @@ img{
 
 /*========== NAV ==========*/
 .nav{
-  max-width: 1500px;
+  max-width: 1530px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
