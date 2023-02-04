@@ -729,13 +729,21 @@ img{
   }
 
 }
+.logo_space{
+  display: block; margin: 0 auto;
+  display: flex;
+}
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   .home__container {
       height: 640px;
   }
+  .logo_space{
+    display: block; margin-left: 40px; margin-top: 10px;
+  }
 
 }
+
 /*Laptop player*/
 #player.player-class {
   position: absolute;
@@ -755,6 +763,7 @@ img{
   width: '368';
 }
 
+
 @media screen and (min-width: 1050px) and (max-width: 1300px) {
   #player.player-class {
     width: 70%;
@@ -770,6 +779,7 @@ img{
   z-index: 1;
   }
 }
+
 /*
 @media screen and (min-width: 390px) and (max-width: 402px) {
   #player.player-class {
