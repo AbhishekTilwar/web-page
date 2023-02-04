@@ -204,6 +204,22 @@ img{
   .newline {
       display: none;
   }
+  .sign_up {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    height: 40px;
+    width: max-content;
+    padding: 0px 15px 0px 15px;
+  }
+  
+  .log_in {
+    border: 1px solid black;
+    font-weight: 900;
+    height: 40px;
+    width: max-content;
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 .nav__item{
@@ -794,6 +810,7 @@ img{
 
 
 .sign_up {
+  margin-right: 30px;
   justify-self: center;
   background-color: black;
   color: white;
@@ -804,6 +821,7 @@ img{
 }
 
 .log_in {
+  margin-right: 20px;
   justify-self: center;
   border: 1px solid black;
   font-weight: 900;
