@@ -190,6 +190,16 @@ img{
     margin-left: 10px;
     margin-top: 10px;
   }
+  .original-price{
+    font-size: smaller;
+    text-decoration: line-through;
+    margin-right: 0.5em;
+  }
+  .off-price {
+    font-size: small;
+    font-weight: bold;
+    color: #4285F4;
+  }
 }
 
 .nav__item{
@@ -372,8 +382,10 @@ img{
 }
 
 .services__description{
-  padding: 0 0.5rem;
+  padding: 0 1.9rem;
 }
+
+
 
 /*========== MENU ==========*/
 .menu__container{
@@ -694,6 +706,7 @@ img{
   .app__container{
     column-gap: 7rem;
   }
+
 }
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
@@ -953,6 +966,11 @@ img{
             font-weight: bold;
             color: red;
           }
+          .off-price {
+            font-weight: bold;
+            color: #4285F4;
+          }
+          
 
 #splash-screen {
   position: relative;
