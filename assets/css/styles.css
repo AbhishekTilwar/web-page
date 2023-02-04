@@ -712,7 +712,9 @@ img{
     margin: 0 var(--mb-1) 0 0;
   }
 }
-
+.logo_space{
+  display: block; margin-left: 2px; margin-top: 0px;
+}
 @media screen and (min-width: 960px){
   .bd-container{
     margin-left: auto;
@@ -727,19 +729,15 @@ img{
   .app__container{
     column-gap: 7rem;
   }
+  .logo_space{
+    display: block; margin-left: 35px; margin-top: 8px;
+  }
+}
 
-}
-.logo_space{
-  display: block; margin: 0 auto;
-  display: flex;
-}
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   .home__container {
       height: 640px;
-  }
-  .logo_space{
-    display: block; margin-left: 40px; margin-top: 10px;
   }
 
 }
