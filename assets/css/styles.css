@@ -200,6 +200,9 @@ img{
     font-weight: bold;
     color: #4285F4;
   }
+  .newline {
+      display: none;
+  }
 }
 
 .nav__item{
