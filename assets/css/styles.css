@@ -214,6 +214,7 @@ img{
   }
   
   .log_in {
+    margin-left: 50px;
     border: 1px solid black;
     font-weight: 900;
     height: 40px;
