@@ -405,6 +405,15 @@ img{
 .services__description{
   padding: 0 1.9rem;
 }
+.services__description_c{
+  padding: 0 0.1rem;
+}
+.services__description_desktop{
+  padding: 0 1.9rem;
+}
+services__description_mobile{
+  display: none;
+}
 
 
 
@@ -924,6 +933,12 @@ img{
             .home__container{
               height: calc(75vh - var(--header-height));
               align-content: center;
+            }
+            .services__description_desktop{
+              display: none;
+            }
+            services__description_mobile{
+              display: flex;
             }
                       /* The laptop with borders */
           .laptop {
