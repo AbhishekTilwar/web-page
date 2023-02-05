@@ -192,6 +192,7 @@ img{
     margin-top: 10px;
   }
   .original-price{
+    color: #666666;
     font-size: x-small;
     text-decoration: line-through;
     margin-right: 0.5em;
@@ -473,6 +474,7 @@ img{
 }
 
 .menu__detail{
+  color: #666666;
   margin-bottom: var(--mb-1);
 }
 
@@ -1017,6 +1019,7 @@ img{
           }
           
           .original-price {
+            color: #666666;
             text-decoration: line-through;
             margin-right: 0.5em;
           }
