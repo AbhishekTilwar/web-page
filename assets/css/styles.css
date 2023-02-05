@@ -442,6 +442,7 @@ img{
   border-radius: .5rem;
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
+  margin-bottom: 1.2rem;
 }
 
 .menu__img{
@@ -942,6 +943,16 @@ img{
             .services__description_mobile{
               display: flex;
             }
+            .menu__content{
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              background-color: var(--container-color);
+              border-radius: .5rem;
+              box-shadow: 0 2px 4px rgba(3,74,40,.15);
+              padding: .75rem;
+              margin-bottom: 0.6rem;
+            }
                       /* The laptop with borders */
           .laptop {
             -webkit-transform-origin: 0 0;
@@ -1018,6 +1029,7 @@ img{
             font-weight: bold;
             color: #4285F4;
           }
+
           
 
 #splash-screen {
