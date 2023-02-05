@@ -189,4 +189,9 @@ function removeShow() {
 // Listen for tab click
 tabItems.forEach((item) => item.addEventListener("click", selectItem));
 
+const menuContents = document.querySelectorAll('.menu__content');
+
+const menuContainer = document.querySelector('.menu__containers');
+
+
 
