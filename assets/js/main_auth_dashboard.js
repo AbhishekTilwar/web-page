@@ -1,17 +1,17 @@
 // setting up firebase with our website
 const firebaseApp = firebase.initializeApp({
-        apiKey: "AIzaSyB091X6ibJMZgKFXfRhr9-d6JA1Hz2P28Q",
-        authDomain: "webauth-46406.firebaseapp.com",
-        projectId: "webauth-46406",
-        storageBucket: "webauth-46406.appspot.com",
-        messagingSenderId: "312791263164",
-        appId: "1:312791263164:web:b64710a9fd44cffccc6db9",
+    apiKey: "AIzaSyCKPYOOr3mgd2jVZ9mB4qqE1QZyJUOCCqo",
+    authDomain: "codingbeyond-dashboard.firebaseapp.com",
+    projectId: "codingbeyond-dashboard",
+    storageBucket: "codingbeyond-dashboard.appspot.com",
+    messagingSenderId: "161475864285",
+    appId: "1:161475864285:web:f9158cc3f149bd9a1f9d34",
+    measurementId: "G-9FWW7WY5GS"
       
 });
-
-firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
+
 
 function togglePassword() {
     var password = document.getElementById("password");
@@ -24,7 +24,7 @@ function togglePassword() {
       showPassword.innerHTML = "<p>Show &#x1F441;</p>";
     }
   }
-  
+
 // Sign up function
 const signUp = () => {
     const email = document.getElementById("email").value;
@@ -34,7 +34,7 @@ const signUp = () => {
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((result) => {
             // Signed in 
-            location.href = "home.html";
+            location.href = "dashboard.html";
             //document.write("You are Signed Up")
             console.log(result)
             // ...
@@ -55,17 +55,14 @@ const signIn = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((result) => {
             // Signed in 
-            location.href = "home.html";
+            location.href = "dashboard.html";
             //document.write("You are Signed In")
             console.log(result)
         })
         .catch((error) => {
-            err.textContent = "Please enter a valid password!"
+            err.textContent = "Invalid password or don't have access!"
             err.style.color = "red"
             console.log(error.code);
             console.log(error.message)
         });
 }
-
-
-

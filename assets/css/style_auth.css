@@ -180,4 +180,39 @@ a {
       transform: none;
     }
   }
+  .email {
+    margin-bottom: 20px;
+  }
+  
+  .email label,
+  .pass label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .email input,
+  .pass input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  #show-password {
+    font-size: 14px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  #error {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+    display: none;
+  }
   
