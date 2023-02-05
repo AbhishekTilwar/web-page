@@ -192,12 +192,13 @@ img{
     margin-top: 10px;
   }
   .original-price{
-    font-size: smaller;
+    font-size: x-small;
     text-decoration: line-through;
     margin-right: 0.5em;
   }
+
   .off-price {
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
     color: #4285F4;
   }
