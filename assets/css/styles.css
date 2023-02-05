@@ -221,6 +221,7 @@ img{
     width: max-content;
     padding: 0px 20px 0px 20px;
   }
+  
 }
 
 .nav__item{
@@ -1035,3 +1036,36 @@ img{
 }
 
 
+.iframe-container_form {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.iframe-container_form iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -3.5%;
+  width: 100%;
+}
+@media screen and (max-width: 768px){
+
+.iframe-container_form {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.iframe-container_form iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -5.6%;
+  width: 100%;
+}
+}
