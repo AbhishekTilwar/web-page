@@ -1023,6 +1023,11 @@ img{
             text-decoration: line-through;
             margin-right: 0.5em;
           }
+          .original-price_intern {
+            color: #666666;
+            text-decoration: line-through;
+            margin-right: 0.5em;
+          }
           
           .sale-price {
             font-weight: bold;
