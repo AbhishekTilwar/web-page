@@ -504,6 +504,15 @@ img{
   padding: .625rem .813rem;
   border-radius: .5rem 0 .5rem 0;
 }
+.menu__button_grey{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #adaeb0;
+  display: flex;
+  padding: .625rem .813rem;
+  border-radius: .5rem 0 .5rem 0;
+}
 .menu__button_yellow{
   position: absolute;
   bottom: 0;
