@@ -223,6 +223,7 @@ img{
     width: max-content;
     padding: 0px 20px 0px 20px;
   }
+
   
 }
 
@@ -705,7 +706,7 @@ img{
     height: 100vh;
     justify-items: center;
   }
-
+  
   .services__container,
   .menu__container{
     margin-top: var(--mb-6);
@@ -947,6 +948,11 @@ img{
             .home__container{
               height: calc(75vh - var(--header-height));
               align-content: center;
+            }
+            .home__subtitle{
+              font-size: var(--h2-font-size);
+              color: var(--title-color);
+              margin-bottom: var(--mb-4);
             }
             .services__description_desktop{
               display: none;
