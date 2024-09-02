@@ -7,7 +7,7 @@ window.onload = function() {
   }, 900);
   setTimeout(function() {
     document.getElementById("splash-screen").style.display = "none";
-    window.location.replace("https://codingbeyond.in/home");   // Temporary url need to replace with home.html file.
+    window.location.replace("home.html");   // Temporary url need to replace with home.html file.
   }, 1600);
 };
 
