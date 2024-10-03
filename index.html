@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script async src="https://www.youtube.com/iframe_api"></script>
+        <script>
+        function playVideo() {
+          const video = document.getElementById('video');
+          video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+        </script>
+        
+        <title>Coding Beyond</title>
+      
+
+    </head>
+    <div id="splash-screen">
+      <!-- Splash screen content goes here -->
+      <img id="splash-img" src="assets/img/icon.gif" width="300px">
+    </div>
+    
+      <!--*************************BODY**************************-->
+    <body>
+      
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
+<!--first comment-->
