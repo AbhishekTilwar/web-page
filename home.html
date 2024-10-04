@@ -290,8 +290,82 @@
  </style>
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
-              <h2 class="section-title">Popular Services</h2>
-          
+              <style>
+        
+                .container_type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+        
+                .typewriter {
+                  align-items: center;
+                    font-size: 24px;
+                    border-right: 2px solid black;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 17ch; /* Set the width according to the text length */
+                    animation: blink-caret 0.75s step-end infinite;
+                }
+        
+                @keyframes blink-caret {
+                    50% {
+                        border-color: transparent;
+                    }
+                }
+            </style>
+         <div class="container_type">
+          <p class="typewriter"><span id="static">P</span><span id="dynamic"></span></p>
+      </div>
+
+      <script>
+        const staticText = 'P'; // The first static letter
+        const dynamicText = 'opular Services...'; // The rest of the text
+        const dynamicElement = document.getElementById('dynamic');
+        let index = 0;
+        let isDeleting = false;
+        let speed = 150; // Typing speed
+
+        function type() {
+            // Update the dynamic text content
+            if (isDeleting) {
+                dynamicElement.textContent = dynamicText.substring(0, index);
+                index--;
+                speed = 100; // Speed up when deleting
+            } else {
+                dynamicElement.textContent = dynamicText.substring(0, index);
+                index++;
+                speed = 150; // Normal speed for typing
+            }
+
+            // If the dynamic text is fully written
+            if (!isDeleting && index === dynamicText.length) {
+                isDeleting = true; // Start deleting after complete typing
+                speed = 1000; // Pause before starting to delete
+            }
+            // If the dynamic text is fully deleted
+            else if (isDeleting && index === 0) {
+                isDeleting = false; // Start typing again
+                speed = 500; // Pause before starting to retype
+            }
+
+            // Recursively call the typing function
+            setTimeout(type, speed);
+        }
+
+        // Start the typing effect
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(type, speed);
+        });
+    </script>
+<div >              
+  <p class="typewriter" id="text"></p>
+
+  <!-- <h2 class="typewriter" id="text">Popular Services</h2> -->
+</div>              
+
+              
               <h1 class="section-subtitle">Professional Services</h1>
               <br>
           
@@ -366,6 +440,7 @@
                   </div>
           
               </div>
+
           </section>
           
 

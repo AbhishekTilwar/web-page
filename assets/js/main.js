@@ -194,4 +194,41 @@ const menuContents = document.querySelectorAll('.menu__content');
 const menuContainer = document.querySelector('.menu__containers');
 
 
+const textFind = document.getElementById('text');
+const text = 'Typing and Rolling Back...';
+let index = 0;
+let isDeleting = false;
+let speed = 150; // Typing speed
+
+function type() {
+    // Update the text content
+    if (isDeleting) {
+        textFind.textContent = text.substring(0, index);
+        index--;
+        speed = 100; // Speed up when deleting
+    } else {
+        textFind.textContent = text.substring(0, index);
+        index++;
+        speed = 150; // Normal speed for typing
+    }
+
+    // If text is fully written
+    if (!isDeleting && index === text.length) {
+        isDeleting = true; // Start deleting after complete typing
+        speed = 1000; // Pause before starting to delete
+    }
+    // If text is fully deleted
+    else if (isDeleting && index === 0) {
+        isDeleting = false; // Start typing again
+        speed = 500; // Pause before starting to retype
+    }
+
+    // Recursively call the typing function
+    setTimeout(type, speed);
+}
+
+// Start the typing effect
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(type, speed);
+});
 

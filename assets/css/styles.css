@@ -1163,3 +1163,18 @@ img{
 }
 
 }
+
+.typewriter {
+  font-size: 24px;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20ch; /* Set the width according to the text length */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
