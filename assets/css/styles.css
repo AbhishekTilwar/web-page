@@ -1161,7 +1161,17 @@ img{
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
+.services__container {
+  height: calc(100vh - var(--header-height));
+  align-content: center;
+}
 
+.services__image{
+  display: none;
+}
+.services{
+  display: none;
+}
 }
 
 .typewriter {
@@ -1173,8 +1183,168 @@ img{
   animation: blink-caret 0.75s step-end infinite;
 }
 
+
 @keyframes blink-caret {
   50% {
       border-color: transparent;
   }
+}
+
+
+.services {
+  margin-top: -5%;
+  padding: 20px;
+  background-color: #f9f9f9;
+
+}
+
+.services__container {
+  margin-top: -2%;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services__image {
+  flex: 1;
+  text-align: center;
+}
+
+.services__img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.services__content {
+  flex: 2;
+  padding: 20px;
+}
+
+.services__svg-icon {
+  width: 50px;
+  height: 50px;
+  fill: #4CAF50; /* Adjust the color as needed */
+}
+
+
+.home__data {
+  margin-top: -8%;
+  margin-left: 10px;
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+}
+
+.clients-container h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.client-item img {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.client-item img:hover {
+  transform: scale(1.05);
+}
+.stats-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.stats-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 220px; /* Fixed width */
+  height: 180px; /* Fixed height */
+  display: flex; /* Flexbox to center content */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-logo {
+  width: 70px; /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
+.stat-count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+.plus-sign {
+  font-size: 1.5em; /* Adjust size as needed */
+  color: #007bff; /* Match with the count color or any color you prefer */
+  margin-left: 5px; /* Add space between the count and the plus sign */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.call-button, .chat-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
+  border: none; /* Remove default button border */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #007bff; /* Button background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  cursor: pointer; /* Pointer on hover */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.call-button:hover, .chat-button:hover {
+  transform: scale(1.1); /* Scale up the button on hover */
+}
+
+svg {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Adjust icon size */
+  color: white; /* Icon color */
 }
